@@ -12,7 +12,7 @@ int main()
     float maior;
     for(int i=0;i<10;i++)
     {
-        printf("Digite o %iº valor:",i+1);
+        printf("Digite o %i valor:",i+1);
         scanf("%f",&vet[i]);
     }
     maior=vet[0];
