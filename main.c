@@ -40,7 +40,7 @@ void somaAbaixoDiagonal(int n, int *M) {
 void somaDiagonalEsquerda(int n, int *M) {
     int soma = 0;
     for (int i = 0; i < n; i++) {
-        soma += *(M + i * n + (n - 1 - i));
+        soma += *(M + i * n + (n - 1 - i)); 
     }
     printf("Soma da diagonal da esquerda: %i\n", soma);
 }
