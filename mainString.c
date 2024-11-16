@@ -4,13 +4,17 @@
 int main()
 {
     char str[n];
-    scanf("%s",&str);
+    scanf("%s", str);
     int i=0;
-    int cont=0;
+    
     while (str[i]!='\0')
     {
-        cont++;
+       
         i++;
     }
+   
+    for(int j=i-1;j>=0;j--)
+       printf("%c",str[j]);
+    return 0;
     
 }
