@@ -1,20 +1,32 @@
 #include <stdio.h>
 #include <stdio.h>
+#include <stdbool.h>
 #define n 100
 int main()
 {
     char str[n];
+    bool erro=true;
     scanf("%s", str);
-    int i=0;
+    int cont=0;
     
-    while (str[i]!='\0')
+    while (str[cont]!='\0')
+        cont++;
+    int j=cont-1;
+    int i=0;
+    while (i<j)
     {
-       
-        i++;
+        if(str[i]!=str[j])
+           {
+             erro=false;
+           }
+      i++;
+      j--;
+          
     }
-   
-    for(int j=i-1;j>=0;j--)
-       printf("%c",str[j]);
+    if(!erro)
+      printf("N eh Palindromo");
+    else
+       printf("Palindromo");
     return 0;
     
 }
